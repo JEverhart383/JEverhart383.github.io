@@ -47,6 +47,10 @@ var Summer12013Name = "Summer I 2013";
 var Summer12013StartDate = "2013-05-12" ; 
 var Summer12013EndDate = "2013-06-30" ; 
 
+//Category Overview 
+
+var catOverviewPath = "data/CategoryTotal.json"; 
+
 
 //define function to write charts with data path and term name as variables
 
@@ -117,6 +121,8 @@ function createCharts(dataPath, termName, startDate, endDate){
 			var s = myChart.addSeries(null , dimple.plot.line); 
 			myChart.draw(); 
 
+			console.log(data2); 
+
 			var myChart2 = new dimple.chart(svg2, data2);
 			myChart2.setBounds(60,30,950,450); 
 			myChart2.addMeasureAxis("p", "views"); 
@@ -127,11 +133,32 @@ function createCharts(dataPath, termName, startDate, endDate){
 
 	});//End JSON function
 
-}//End createCharts function  
+}//End createCharts 
+
+function categoryOverview(catDataPath){
+
+	var svg = dimple.newSvg("#chart3", 1000, 500);
+    d3.json(catDataPath, function (data) { 	
+
+      var myChart = new dimple.chart(svg, data); 
+      myChart.setBounds(65, 30, 950, 400)
+      myChart.addCategoryAxis("x", "term_name");
+      myChart.addMeasureAxis("y", "views");
+      myChart.addMeasureAxis("z", "views");
+      myChart.addSeries("category", dimple.plot.bubble);
+      myChart.addLegend(900, 40, 200, 200, "left");
+      myChart.draw();
+    });
+
+
+}
+
 
 //inital data load with most recent completed term
 
 createCharts(Spring2015, Spring2015Name, Spring2015StartDate, Spring2015EndDate); 
+
+categoryOverview(catOverviewPath); 
 
 
 //update data with Spring 2015 
