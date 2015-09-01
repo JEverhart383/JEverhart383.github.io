@@ -1,0 +1,132 @@
+[
+        {
+            "term_name": 2014, 
+            "category": "announcements",
+            "views": 68
+        },
+        {
+            "term_name": 2014, 
+            "category": "assignments",
+            "views": 3119
+        },
+        {
+            "term_name": 2014, 
+            "category": "collaborations",
+            "views": 17
+        },
+        {
+            "term_name": 2014, 
+            "category": "conferences",
+            "views": 8
+        },
+        {
+            "term_name": 2014, 
+            "category": "discussions",
+            "views": 24059
+        },
+        {
+            "term_name": 2014, 
+            "category": "files",
+            "views": 1364
+        },
+        {
+            "term_name": 2014, 
+            "category": "general",
+            "views": 18040
+        },
+        {
+            "term_name": 2014, 
+            "category": "grades",
+            "views": 2553
+        },
+        {
+            "term_name": 2014,
+            "category": "groups",
+            "views": 91
+        },
+        {
+            "term_name": 2014,
+            "category": "modules",
+            "views": 496
+        },
+        {
+            "term_name": 2014, 
+            "category": "other",
+            "views": 12443
+        },
+        {
+            "term_name": 2014, 
+            "category": "pages",
+            "views": 16731
+        },
+        {
+            "term_name": 2014,
+            "category": "quizzes",
+            "views": 2
+        }, 
+        {
+            "term_name": 2015,
+            "category": "announcements",
+            "views": 29
+        },
+        {
+            "term_name": 2015,
+            "category": "assignments",
+            "views": 3590
+        },
+        {
+            "term_name": 2015,
+            "category": "collaborations",
+            "views": 10
+        },
+        {
+            "term_name": 2015,
+            "category": "conferences",
+            "views": 4
+        },
+        {
+            "term_name": 2015,
+            "category": "discussions",
+            "views": 32838
+        },
+        {
+            "term_name": 2015,
+            "category": "files",
+            "views": 1707
+        },
+        {
+            "term_name": 2015,
+            "category": "general",
+            "views": 19520
+        },
+        {
+            "term_name": 2015,
+            "category": "grades",
+            "views": 2973
+        },
+        {
+            "term_name": 2015,
+            "category": "groups",
+            "views": 133
+        },
+        {
+            "term_name": 2015,
+            "category": "modules",
+            "views": 50
+        },
+        {
+            "term_name": 2015,
+            "category": "other",
+            "views": 17136
+        },
+        {
+            "term_name": 2015,
+            "category": "pages",
+            "views": 30844
+        },
+        {
+            "term_name": 2015,
+            "category": "quizzes",
+            "views": 5
+        }
+    ]
