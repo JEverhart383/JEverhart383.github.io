@@ -132,7 +132,7 @@ var chart = new tauCharts.Chart({
             color: 'sport',
             size: 'players',
             plugins: [
-            	tauCharts.api.plugins.get('tooltip')({fields:[ "long_name", "teams" ]}), 
+            	tauCharts.api.plugins.get('tooltip')({fields:[ "long_name", "sport", "teams", "players", "average_salary", "avg_attendance", "top_payer"]}), 
             	tauCharts.api.plugins.get('legend')()
             ]
         });
