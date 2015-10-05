@@ -1,0 +1,102 @@
+[
+	 {
+	 	"name": "NBA",
+		"long_name":"National Basketball Association",
+		"teams": 30, 
+		"players": 441, 
+		"average_salary":4522283, 
+		"avg_attendance'12-'13": 17721, 
+		""
+
+	}, 
+
+	{
+		"name": "IPL",
+		"long_name":"Indian Premier League",
+		"teams": 9, 
+		"players": 147, 
+		"average_salary":4186379, 
+		"avg_attendance'12-'13": 23763
+	},
+
+	{
+		"name": "MLB",
+		"long_name":"Major League Baseball",
+		"teams": 30, 
+		"players": 856, 
+		"average_salary":3932912, 
+		"avg_attendance'12-'13": 30514
+
+	},
+
+	{
+		"name": "EPL",
+		"long_name":"English Premier League",
+		"teams": 20, 
+		"players": 500, 
+		"average_salary":3453779, 
+		"avg_attendance'12-'13": 35931
+
+	},
+
+	{
+		"name": "NHL",
+		"long_name":"National Hockey League",
+		"teams": 30, 
+		"players": 763, 
+		"average_salary":2424080, 
+		"avg_attendance'12-'13": 17455
+
+	}, 
+
+	{
+		"name": "Bundesliga",
+		"long_name":"Bundesliga",
+		"teams": 18, 
+		"players": 456, 
+		"average_salary": 2212952, 
+		"avg_attendance'12-'13": 41914
+
+	}, 
+
+	{
+		"name": "Serie A",
+		"long_name":"Serie A",
+		"teams": 20, 
+		"players": 564, 
+		"average_salary":1995869, 
+		"avg_attendance'12-'13": 23300
+
+	}, 	
+
+	{
+		"name": "NFL",
+		"long_name":"National Football League",
+		"teams": 32, 
+		"players": 1696, 
+		"average_salary":1955966, 
+		"avg_attendance'12-'13": 67591
+
+	}, 
+
+	{
+		"name": "La Liga",
+		"long_name":"La Liga",
+		"teams": 20, 
+		"players": 501, 
+		"average_salary":1842942, 
+		"avg_attendance'12-'13": 29330
+
+	}, 
+
+	{
+		"name": "NPB",
+		"long_name":"Nippon Professional Baseball",
+		"teams": 12, 
+		"players": 324, 
+		"average_salary":604940, 
+		"avg_attendance'12-'13": 25518
+
+	}
+
+]
