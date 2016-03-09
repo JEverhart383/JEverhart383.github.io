@@ -25,12 +25,50 @@
 			<h1>Jeff Everhart's Projects</h1>
 			<br>
 			<div class="well">
-				<p class="lead">Jeff Everhart is a self-taught developer specializing in data-driven, full stack JavaScript applications. With a special interest in data visualization and user experience, Jeff likes to work on projects that make information more useful and meaningful so that we can make better decisions and lead better lives. He works with Instructional Technology and teaches English at <a href="http://www.longwood.edu" target="_blank">Longwood University</a>, so ask him about Canvas, Walt Whitman, or building sweet things with Google Apps Script.</p>
+				<p class="lead">Jeff Everhart is a self-taught developer specializing in data-driven, full-stack JavaScript applications. With a special interest in data visualization and user experience, Jeff likes to work on projects that make information more useful and meaningful so that we can make better decisions and lead better lives. He works with Instructional Technology and teaches English at <a href="http://www.longwood.edu" target="_blank">Longwood University</a>, so ask him about Canvas, Walt Whitman, or building sweet things with Google Apps Script.</p>
 			</div>
-			<h2>Alpha Production Apps</h2>
+			<div>
+				<p class="lead">Technology Legend</p>
+				<p>
+					<span class="label label-primary">Front-End</span>
+					<span class="label label-success">Back-End</span>
+					<span class="label label-warning">API or Web Service</span>
+					<span class="label label-danger">Hosting or Cloud Platform</span>
+				</p>
+			</div>
+			<h2>Full-Stack Applications</h2>
 			<ul class="list-group">
 				<li class="list-group-item">
-					<h3><a href="https://amber-heat-2742.firebaseapp.com">WOD Smart</a></h3>
+					<h3><a href="https://nameless-thicket-50828.herokuapp.com/#/home" target="_blank">Google Maps Geolocation and Weather API</a></h3>
+					<h4>Description:</h4>
+					<p>This application is built using a MEAN stack approach (sans MongoDB) and is hosted on the Heroku Platform. It uses the HTML 5 Geolocation API and Google Maps API to provide lat/long coordinates for a current position and forecast weather for the current position using the Forecast.io API. I also hooked the application up to a Google Sheet serving data as CSV that is collected every hour from Forecast.io using Google Apps Script. All of the visualization is done with nvd3, a libary that extends d3.</p>
+					<h4>Project Reflections:</h4> <a href="http://www.jeffreyeverhart.com" target="_blank">Some Reflections on Using Google Apps Script as an Application Backend</a>
+					<h4>Technologies Used:</h4>
+					<span class="label label-primary">Bootstrap 3</span>
+					<span class="label label-primary">Angular JS</span>
+					<span class="label label-primary">Angular UI Bootstrap</span>
+					<span class="label label-primary">d3.js</span>
+					<span class="label label-primary">nvd3</span>
+					<span class="label label-success">Node.js</span>
+					<span class="label label-success">Express</span>
+					<span class="label label-success">Google Apps Script</span>
+					<span class="label label-warning">HTML 5 Geolocation API</span>
+					<span class="label label-warning">Google Maps API</span>
+					<span class="label label-warning">Forecast.io API</span>
+					<span class="label label-danger">Heroku PaaS</span>
+				</li>
+				<li class="list-group-item">
+					<h3><a href="https://s3.amazonaws.com/everhartmedia/index.html" target="_blank">Media Library | "Active Learning Platform"</a></h3>
+					<h4>Description:</h4>
+					<p>This application is built using static resources served from Amazon Simple Storage Service (S3). I built this application to explore the feasibility of a homegrown video classroom. The app uses Google Material Design for the front-end framework and Angular to handle loading the videos, which is done to keep data transfer costs down from AWS but still make all the content accessible to users in one view. I used the HTML 5 Video API to create time synced notes and will integrate this with a Firebase NoSQL DB to persist the notes and discussions across sessions.</p>
+					<h4>Technologies Used:</h4>
+					<span class="label label-primary">Google Material Design</span>
+					<span class="label label-primary">Angular JS</span>
+					<span class="label label-warning">HTML 5 Video API</span>
+					<span class="label label-danger">Amazon S3</span>
+				</li>
+				<li class="list-group-item">
+					<h3><a href="https://amber-heat-2742.firebaseapp.com" target="_blank">WOD Smart</a></h3>
 					<h4>Description:</h4>
 					<p>WOD Smart is a complete fitness tracking tool for the CrossFit&#8482; community. WOD Smart leverages cloud technologies to provide coaches and athletes with up to date statistics on performace and helps build a thriving fitness community by publicizing workouts to a community feed. WOD Smart is currently in Alpha and is going through product development life cycles with help from the cool people at CrossFit First Due.</p>
 					<h4>Technologies Used:</h4>
@@ -39,14 +77,29 @@
 					<span class="label label-primary">Bootstrap 3</span>
 					<span class="label label-primary">Angular JS</span>
 					<span class="label label-primary">Angular UI Bootstrap</span>
-					<span class="label label-primary">Firebase BaaS</span>
 					<span class="label label-primary">d3.js</span>
 					<span class="label label-primary">dimple.js</span>
+					<span class="label label-success">Firebase NoSQL DB</span>
+					<span class="label label-danger">Firebase BaaS</span>
 				</li>
+				<li class="list-group-item">
+					<h3><a href="https://canvas-api-tool.herokuapp.com/#/home" target="_blank">Canvas API Interface</a></h3>
+					<h4>Description:</h4>
+					<p>This project is a Canvas API Tool that helps support a variety of support tasks used by the DEC's help desk. It's made using Angular, Node, and Express and is hosted on Heroku. This tool helps provide error checking for crosslisting, manually create one or multiple courses, and creates development shells for a group of students registered in the DEC's faculty development course and enrolls them as teachers in the development shells.</p>
+					<h4>Technologies Used:</h4>
+					<span class="label label-success">Node.js</span>
+					<span class="label label-success">Express</span>
+					<span class="label label-primary">Angular.js</span>
+					<span class="label label-primary">Bootstrap</span>
+					<span class="label label-danger">Heroku</span>
+					<span class="label label-warning">Canvas API</span>
+
+				</li>
+			</ul>	
 			<h2>Data Visulization</h2>
 			<ul class="list-group">
 				<li class="list-group-item">
-					<h3><a href="http://JEverhart383.github.io/canvasdataprojecthosted">Canvas Data Project</a></h3>
+					<h3><a href="http://JEverhart383.github.io/canvasdataprojecthosted" target="_blank">Canvas Data Project</a></h3>
 					<h4>Technologies Used:</h4>
 					<span class="label label-primary">HTML 5</span>
 					<span class="label label-primary">CSS 3</span>
@@ -54,10 +107,10 @@
 					<span class="label label-primary">JS</span>
 					<span class="label label-primary">d3.js</span>
 					<span class="label label-primary">dimple.js</span>
-					<span class="label label-primary">Canvas API</span>
+					<span class="label label-warning">Canvas API</span>
 				</li>
 				<li class="list-group-item">
-					<h3><a href="http://JEverhart383.github.io/1839project">1839 Project</a></h3>
+					<h3><a href="http://JEverhart383.github.io/1839project" target="_blank">1839 Project</a></h3>
 					<h4>Technologies Used:</h4>
 					<span class="label label-primary">HTML 5</span>
 					<span class="label label-primary">CSS 3</span>
@@ -65,10 +118,10 @@
 					<span class="label label-primary">JS</span>
 					<span class="label label-primary">d3.js</span>
 					<span class="label label-primary">dimple.js</span>
-					<span class="label label-primary">Canvas API</span>
+					<span class="label label-warning">Canvas API</span>
 				</li>
 				<li class="list-group-item">
-					<h3><a href="http://JEverhart383.github.io/sports-data-viz">Top 10 Sports Leagues: Data Viz</a></h3>
+					<h3><a href="http://JEverhart383.github.io/sports-data-viz" target="_blank">Top 10 Sports Leagues: Data Viz</a></h3>
 					<h4>Technologies Used:</h4>
 					<span class="label label-primary">HTML 5</span>
 					<span class="label label-primary">CSS 3</span>
@@ -77,7 +130,7 @@
 					<span class="label label-primary">taucharts</span>
 				</li>
 				<li class="list-group-item">
-					<h3><a href="http://jeverhart383.github.io/presidentialdata/">Historical Presidential Election Data Visualization</a></h3>
+					<h3><a href="http://jeverhart383.github.io/presidentialdata/" target="_blank">Historical Presidential Election Data Visualization</a></h3>
 					<h4>Technologies Used:</h4>
 					<span class="label label-primary">HTML 5</span>
 					<span class="label label-primary">CSS 3</span>
@@ -88,7 +141,7 @@
 			<h2>Mobile Web Apps + Other Projects</h2>
 			<ul class="list-group">
 				<li class="list-group-item">
-					<h3><a href="http://prioritask.jeffreyeverhart.com">Prioritask: To-do list app</a></h3>
+					<h3><a href="http://prioritask.jeffreyeverhart.com" target="_blank">Prioritask: To-do list app</a></h3>
 					<h4>Technologies Used:</h4>
 					<span class="label label-primary">HTML 5</span>
 					<span class="label label-primary">CSS 3</span>
@@ -99,7 +152,7 @@
 					<span class="label label-primary">pickadate.js</span>
 				</li>
 				<li class="list-group-item">
-					<h3><a href="http://smiles.jeffreyeverhart.com">Smiles: photo discovery app</a></h3>
+					<h3><a href="http://smiles.jeffreyeverhart.com" target="_blank">Smiles: photo discovery app</a></h3>
 					<h4>Technologies Used:</h4>
 					<span class="label label-primary">HTML 5</span>
 					<span class="label label-primary">CSS 3</span>
@@ -107,11 +160,11 @@
 					<span class="label label-primary">JS</span>
 					<span class="label label-primary">jQuery</span>
 					<span class="label label-primary">animate.css</span>
-					<span class="label label-primary">Flickr API</span>
-					<span class="label label-primary">Facebook API</span>
+					<span class="label label-warning">Flickr API</span>
+					<span class="label label-warning">Facebook API</span>
 				</li>
 				<li class="list-group-item">
-					<h3><a href="https://github.com/JEverhart383/flashcardJS">Flashcard Game</a></h3>
+					<h3><a href="https://github.com/JEverhart383/flashcardJS" target="_blank">Flashcard Game</a></h3>
 					<h4>Technologies Used:</h4>
 					<span class="label label-primary">HTML 5</span>
 					<span class="label label-primary">CSS 3</span>
@@ -121,27 +174,17 @@
 			<h2>Backend Technologies</h2>
 			<ul class="list-group">
 				<li class="list-group-item">
-					<h3><a href="https://canvas-api-tool.herokuapp.com/#/home">Canvas API Interface</a></h3>
+					<h3><a href="https://github.com/JEverhart383/WeatherAPI" target="_blank">Weather API</a></h3>
 					<h4>Technologies Used:</h4>
-					<span class="label label-primary">Node.js</span>
-					<span class="label label-primary">Express</span>
-					<span class="label label-primary">Angular.js</span>
-					<span class="label label-primary">Bootstrap</span>
-					<span class="label label-primary">Heroku</span>
-
+					<span class="label label-success">Node.js</span>
+					<span class="label label-warning">Google Maps API</span>
+					<span class="label label-warning">forecast.io</span>
 				</li>
 				<li class="list-group-item">
-					<h3><a href="https://github.com/JEverhart383/WeatherAPI">Weather API</a></h3>
+					<h3><a href="https://github.com/JEverhart383/CanvasAPI" target="_blank">Canvas API</a></h3>
 					<h4>Technologies Used:</h4>
-					<span class="label label-primary">Node.js</span>
-					<span class="label label-primary">Google Maps API</span>
-					<span class="label label-primary">forecast.io</span>
-				</li>
-				<li class="list-group-item">
-					<h3><a href="https://github.com/JEverhart383/CanvasAPI">Canvas API</a></h3>
-					<h4>Technologies Used:</h4>
-					<span class="label label-primary">Node.js</span>
-					<span class="label label-primary">Canvas API</span>
+					<span class="label label-success">Node.js</span>
+					<span class="label label-warning">Canvas API</span>
 				</li>	
 
 		</div>
