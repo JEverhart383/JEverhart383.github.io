@@ -667,5 +667,83 @@
             "category": "quizzes",
             "views": 145157,
             "id": null
+        }, 
+        {
+            "term_name": "Fall 2015",
+            "category": "announcements",
+            "views": 87525,
+            "id": null
+        },
+        {
+            "term_name": "Fall 2015",
+            "category": "assignments",
+            "views": 1583647,
+            "id": null
+        },
+        {
+            "term_name": "Fall 2015",
+            "category": "collaborations",
+            "views": 4359,
+            "id": null
+        },
+        {
+            "term_name": "Fall 2015",
+            "category": "conferences",
+            "views": 3117,
+            "id": null
+        },
+        {
+            "term_name": "Fall 2015",
+            "category": "discussions",
+            "views": 391550,
+            "id": null
+        },
+        {
+            "term_name": "Fall 2015",
+            "category": "files",
+            "views": 801392,
+            "id": null
+        },
+        {
+            "term_name": "Fall 2015",
+            "category": "general",
+            "views": 995839,
+            "id": null
+        },
+        {
+            "term_name": "Fall 2015",
+            "category": "grades",
+            "views": 792427,
+            "id": null
+        },
+        {
+            "term_name": "Fall 2015",
+            "category": "groups",
+            "views": 3060,
+            "id": null
+        },
+        {
+            "term_name": "Fall 2015",
+            "category": "modules",
+            "views": 509978,
+            "id": null
+        },
+        {
+            "term_name": "Fall 2015",
+            "category": "other",
+            "views": 356225,
+            "id": null
+        },
+        {
+            "term_name": "Fall 2015",
+            "category": "pages",
+            "views": 265982,
+            "id": null
+        },
+        {
+            "term_name": "Fall 2015",
+            "category": "quizzes",
+            "views": 1196278,
+            "id": null
         }
 ] 
