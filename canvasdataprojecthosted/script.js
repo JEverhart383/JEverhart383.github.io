@@ -1,4 +1,9 @@
+//Fall 2015 
 
+var Fall2015 = "data/Fall2015/Fall2015"; 
+var Fall2015Name = "Fall 2015"; 
+var Fall2015StartDate = "2015-08-23";
+var Fall2015EndDate = "2015-12-28"; 
 
 //Summer II 2015 
 
@@ -226,9 +231,14 @@ function categoryOverview(catDataPath){
 
 //inital data load with most recent completed term
 
-createCharts(Spring2015, Spring2015Name, Spring2015StartDate, Spring2015EndDate); 
+createCharts(Fall2015, Fall2015Name, Fall2015StartDate, Fall2015EndDate); 
 
 categoryOverview(catOverviewPath); 
+
+//update data with Summer I 2015
+document.querySelector(".fall2015").onclick = function(){
+	createCharts(Fall2015, Fall2015Name, Fall2015StartDate, Fall2015EndDate); 
+}
 
 //update data with Summer I 2015
 document.querySelector(".summer12015").onclick = function(){
