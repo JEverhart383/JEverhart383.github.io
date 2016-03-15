@@ -1,9 +1,18 @@
+
+
 //Summer II 2015 
 
 var Summer22015 = "data/Summer22015/Summer22015"; 
 var Summer22015Name = "Summer II 2015"; 
 var Summer22015StartDate = "2015-05-10";
 var Summer22015EndDate = "2015-08-24";  
+
+//Summer I 2015 
+
+var Summer12015 = "data/Summer12015/Summer12015"; 
+var Summer12015Name = "Summer I 2015"; 
+var Summer12015StartDate = "2015-05-11";
+var Summer12015EndDate = "2015-07-03";
 
 
 //Spring 2015 
@@ -220,6 +229,11 @@ function categoryOverview(catDataPath){
 createCharts(Spring2015, Spring2015Name, Spring2015StartDate, Spring2015EndDate); 
 
 categoryOverview(catOverviewPath); 
+
+//update data with Summer I 2015
+document.querySelector(".summer12015").onclick = function(){
+	createCharts(Summer12015, Summer12015Name, Summer12015StartDate, Summer12015EndDate); 
+}
 
 //update data with Summer II 2015
 document.querySelector(".summer22015").onclick = function(){
