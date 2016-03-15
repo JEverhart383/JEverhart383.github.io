@@ -2172,5 +2172,72 @@
             "participations": 2,
             "id": null
         }
+    ], 
+    "by_category": [
+        {
+            "category": "announcements",
+            "views": 14909,
+            "id": null
+        },
+        {
+            "category": "assignments",
+            "views": 283885,
+            "id": null
+        },
+        {
+            "category": "collaborations",
+            "views": 3461,
+            "id": null
+        },
+        {
+            "category": "conferences",
+            "views": 899,
+            "id": null
+        },
+        {
+            "category": "discussions",
+            "views": 222341,
+            "id": null
+        },
+        {
+            "category": "files",
+            "views": 98574,
+            "id": null
+        },
+        {
+            "category": "general",
+            "views": 139106,
+            "id": null
+        },
+        {
+            "category": "grades",
+            "views": 117165,
+            "id": null
+        },
+        {
+            "category": "groups",
+            "views": 1053,
+            "id": null
+        },
+        {
+            "category": "modules",
+            "views": 150041,
+            "id": null
+        },
+        {
+            "category": "other",
+            "views": 62519,
+            "id": null
+        },
+        {
+            "category": "pages",
+            "views": 83706,
+            "id": null
+        },
+        {
+            "category": "quizzes",
+            "views": 324965,
+            "id": null
+        }
     ]
 }
