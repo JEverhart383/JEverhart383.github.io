@@ -221,12 +221,7 @@ function categoryOverview(catDataPath){
       myChart.addMeasureAxis("y", "views");
       myChart.addMeasureAxis("z", "views");
       var series = myChart.addSeries("category", dimple.plot.bubble);
-      series.addOrderRule([
-      	"Summer I 2013", "Summer II 2013", "Fall 2013",
-      	"Spring 2014", "Summer I 2014", "Summer II 2014", 
-      	"Fall 2014", "Spring 2015", "Summer I 2015", "Summer II 2015", 
-      	"Fall 2015" 
-      	]); 
+      series.addOrderRule("term_name"); 
       myChart.addLegend(900, 40, 200, 200, "left");
       myChart.draw();
     });
