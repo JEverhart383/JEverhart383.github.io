@@ -140,7 +140,7 @@ function createCharts(dataPath, termName, startDate, endDate){
 
 			var myChart = new dimple.chart(svg,dataTrimmed); 
 			myChart.setBounds(60,30, 1100, 400); 
-			var x = myChart.addTimeAxis("x", "date", "%Y-%m-%d", "%a-%m-%d-%Y" ); 
+			var x = myChart.addTimeAxis("x", "date", "%Y-%m-%d"); 
 			var y = myChart.addMeasureAxis("y", "views"); 
 			var p = myChart.addMeasureAxis("y", "participations"); 
 			var s = myChart.addSeries(null , dimple.plot.line); 
@@ -212,7 +212,7 @@ function createCharts(dataPath, termName, startDate, endDate){
 
 function categoryOverview(catDataPath){
 
-	var svg = dimple.newSvg("#chart3", 1200, 500);
+	var svg = dimple.newSvg("#chart3", 1400, 500);
     d3.json(catDataPath, function (data) { 	
 
       var myChart = new dimple.chart(svg, data); 
