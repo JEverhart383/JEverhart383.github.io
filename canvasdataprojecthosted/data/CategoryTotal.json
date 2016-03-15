@@ -589,5 +589,83 @@
             "term_name": "Summer II 2015",
             "category": "quizzes",
             "views": 324965
+        }, 
+        {
+            "term_name": "Summer I 2015",
+            "category": "announcements",
+            "views": 4384,
+            "id": null
+        },
+        {
+            "term_name": "Summer I 2015",
+            "category": "assignments",
+            "views": 133274,
+            "id": null
+        },
+        {
+            "term_name": "Summer I 2015",
+            "category": "collaborations",
+            "views": 70,
+            "id": null
+        },
+        {
+            "term_name": "Summer I 2015",
+            "category": "conferences",
+            "views": 205,
+            "id": null
+        },
+        {
+            "term_name": "Summer I 2015",
+            "category": "discussions",
+            "views": 80548,
+            "id": null
+        },
+        {
+            "term_name": "Summer I 2015",
+            "category": "files",
+            "views": 41465,
+            "id": null
+        },
+        {
+            "term_name": "Summer I 2015",
+            "category": "general",
+            "views": 57788,
+            "id": null
+        },
+        {
+            "term_name": "Summer I 2015",
+            "category": "grades",
+            "views": 55494,
+            "id": null
+        },
+        {
+            "term_name": "Summer I 2015",
+            "category": "groups",
+            "views": 134,
+            "id": null
+        },
+        {
+            "term_name": "Summer I 2015",
+            "category": "modules",
+            "views": 64974,
+            "id": null
+        },
+        {
+            "term_name": "Summer I 2015",
+            "category": "other",
+            "views": 31425,
+            "id": null
+        },
+        {
+            "term_name": "Summer I 2015",
+            "category": "pages",
+            "views": 52386,
+            "id": null
+        },
+        {
+            "term_name": "Summer I 2015",
+            "category": "quizzes",
+            "views": 145157,
+            "id": null
         }
 ] 
