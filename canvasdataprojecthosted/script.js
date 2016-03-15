@@ -207,7 +207,7 @@ function createCharts(dataPath, termName, startDate, endDate){
 
 function categoryOverview(catDataPath){
 
-	var svg = dimple.newSvg("#chart3", 1000, 500);
+	var svg = dimple.newSvg("#chart3", 1200, 500);
     d3.json(catDataPath, function (data) { 	
 
       var myChart = new dimple.chart(svg, data); 
