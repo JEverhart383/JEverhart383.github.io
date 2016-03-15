@@ -140,8 +140,7 @@ function createCharts(dataPath, termName, startDate, endDate){
 
 			var myChart = new dimple.chart(svg,dataTrimmed); 
 			myChart.setBounds(60,30, 1100, 400); 
-			var x = myChart.addTimeAxis("x", "date"); 
-			x.tickFormat = "%x"; 
+			var x = myChart.addTimeAxis("x", "date","%Y-%m-%d", "%x"); 
 			var y = myChart.addMeasureAxis("y", "views"); 
 			var p = myChart.addMeasureAxis("y", "participations"); 
 			var s = myChart.addSeries(null , dimple.plot.line); 
