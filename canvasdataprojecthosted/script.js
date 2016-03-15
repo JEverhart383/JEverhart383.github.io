@@ -217,31 +217,33 @@ function categoryOverview(catDataPath){
 
     	for (var i = 0; i < data.length; i++){
 
-    		if(data.term_name === "Summer I 2013"){
-    			data.order = 0; 
-    		} else if (data.term_name === "Summer II 2013"){
-    			data.order = 1; 
-    		} else if (data.term_name === "Fall 2013"){
-    			data.order = 2; 
-    		} else if (data.term_name === "Spring 2014"){
-    			data.order = 3; 
-    		} else if (data.term_name === "Summer I 2014"){
-    			data.order = 4; 
-    		} else if (data.term_name === "Summer II 2014"){
-    			data.order = 5; 
-    		} else if (data.term_name === "Fall 2014"){
-    			data.order = 6; 
-    		} else if (data.term_name === "Spring 2015"){
-    			data.order = 7; 
-    		} else if (data.term_name === "Summer I 2015"){
-    			data.order = 8; 
-    		} else if (data.term_name === "Summer II 2015"){
-    			data.order = 9; 
-    		} else if (data.term_name === "Fall 2015"){
-    			data.order = 10; 
+    		if(data[i].term_name === "Summer I 2013"){
+    			data[i].order = 0; 
+    		} else if (data[i].term_name === "Summer II 2013"){
+    			data[i].order = 1; 
+    		} else if (data[i].term_name === "Fall 2013"){
+    			data[i].order = 2; 
+    		} else if (data[i].term_name === "Spring 2014"){
+    			data[i].order = 3; 
+    		} else if (data[i].term_name === "Summer I 2014"){
+    			data[i].order = 4; 
+    		} else if (data[i].term_name === "Summer II 2014"){
+    			data[i].order = 5; 
+    		} else if (data[i].term_name === "Fall 2014"){
+    			data[i].order = 6; 
+    		} else if (data[i].term_name === "Spring 2015"){
+    			data[i].order = 7; 
+    		} else if (data[i].term_name === "Summer I 2015"){
+    			data[i].order = 8; 
+    		} else if (data[i].term_name === "Summer II 2015"){
+    			data[i].order = 9; 
+    		} else if (data[i].term_name === "Fall 2015"){
+    			data[i].order = 10; 
     		}
 
     	}
+
+    	console.log(data); 
 
       var myChart = new dimple.chart(svg, data); 
       myChart.setBounds(65, 30, 1200, 450)
