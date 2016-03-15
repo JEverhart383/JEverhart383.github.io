@@ -249,7 +249,7 @@ function categoryOverview(catDataPath){
       myChart.addMeasureAxis("y", "views");
       myChart.addMeasureAxis("z", "views");
       var series = myChart.addSeries("category", dimple.plot.bubble);
-      series.addOrderRule("term_name"); 
+      series.addOrderRule("order"); 
       myChart.addLegend(900, 40, 200, 200, "left");
       myChart.draw();
     });
