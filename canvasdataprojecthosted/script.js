@@ -248,7 +248,7 @@ function categoryOverview(catDataPath){
       var myChart = new dimple.chart(svg, data); 
       myChart.setBounds(65, 30, 1200, 450)
       var xAxis = myChart.addCategoryAxis("x", "term_name");
-      xAxis.addGroupOrderRule(["Summer I 2013", "Summer II 2013", "Fall 2013","Spring 2014", "Summer I 2014", "Summer II 2014","Fall 2014", "Spring 2015", "Summer I 2015", "Summer II 2015","Fall 2015" ]); 
+      xAxis.addOrderRule(["Summer I 2013", "Summer II 2013", "Fall 2013","Spring 2014", "Summer I 2014", "Summer II 2014","Fall 2014", "Spring 2015", "Summer I 2015", "Summer II 2015","Fall 2015" ]); 
       myChart.addMeasureAxis("y", "views");
       myChart.addMeasureAxis("z", "views");
       myChart.addSeries("category", dimple.plot.bubble); 
