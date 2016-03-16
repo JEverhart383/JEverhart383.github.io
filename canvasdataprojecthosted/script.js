@@ -218,27 +218,27 @@ function categoryOverview(catDataPath){
     	for (var i = 0; i < data.length; i++){
 
     		if(data[i].term_name === "Summer I 2013"){
-    			data[i].order = 0; 
+    			data[i].order = "a"; 
     		} else if (data[i].term_name === "Summer II 2013"){
-    			data[i].order = 1; 
+    			data[i].order = "b"; 
     		} else if (data[i].term_name === "Fall 2013"){
-    			data[i].order = 2; 
+    			data[i].order = "c"; 
     		} else if (data[i].term_name === "Spring 2014"){
-    			data[i].order = 3; 
+    			data[i].order = "d"; 
     		} else if (data[i].term_name === "Summer I 2014"){
-    			data[i].order = 4; 
+    			data[i].order = "e"; 
     		} else if (data[i].term_name === "Summer II 2014"){
-    			data[i].order = 5; 
+    			data[i].order = "f"; 
     		} else if (data[i].term_name === "Fall 2014"){
-    			data[i].order = 6; 
+    			data[i].order = "g"; 
     		} else if (data[i].term_name === "Spring 2015"){
-    			data[i].order = 7; 
+    			data[i].order = "h"; 
     		} else if (data[i].term_name === "Summer I 2015"){
-    			data[i].order = 8; 
+    			data[i].order = "i"; 
     		} else if (data[i].term_name === "Summer II 2015"){
-    			data[i].order = 9; 
+    			data[i].order = "j"; 
     		} else if (data[i].term_name === "Fall 2015"){
-    			data[i].order = 10; 
+    			data[i].order = "k"; 
     		}
 
     	}
