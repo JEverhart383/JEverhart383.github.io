@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Visualizing Whitman</title>
+  <meta name="author" content="name">
+  <meta name="description" content="description here">
+  <meta name="keywords" content="keywords,here">
+
+<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+
+<style type="text/css">
+  div.tooltip { 
+    position: absolute;     
+    text-align: center;     
+    width: 60px;          
+    height: 28px;         
+    padding: 2px;       
+    font: 12px sans-serif;    
+    background: lightsteelblue; 
+    border: 0px;    
+    border-radius: 8px;     
+    pointer-events: none;     
+}
+
+h1, div{
+  font-family: 'Great Vibes', cursive;
+}
+
+body {
+  text-align: center;
+}
+
+
+
+</style>
+
+
+  </head>
+  <body>
+
+    <h1>Visualizing Whitman's <i>Leaves of Grass (1855)</i></h1>
+    <div>Word frequency calculated using Natural Language Tool Kit and visualized with D3</div>
+
+
+
+    <div class="wordfreq"></div>
+
+
+
+    <script type="text/javascript" >
+
+    var diameter = 960,
+    format = d3.format(",d"),
+    color = d3.scale.category20c();
+
+    var bubble = d3.layout.pack()
+      .sort(null)
+      .size([diameter, diameter])
+      .padding(1.5);
+
+    var svg = d3.select("body").append("svg")
+      .attr("width", diameter)
+      .attr("height", diameter)
+      .attr("class", "bubble");
+
+      var div = d3.select("body").append("div") 
+        .attr("class", "tooltip")       
+        .style("opacity", 0);
+
+
+      d3.json("result.json", function(error, root){
+
+          if (error) throw error;
+
+          var frequencyObject = {
+            "name": "Leaves", 
+            "children": []
+          }
+
+        for (word in root) {
+
+          var newObj = {
+            "name": word, 
+            "size": root[word]
+          }; 
+          frequencyObject.children.push(newObj); 
+        }; 
+
+        console.log(frequencyObject); 
+
+          var node = svg.selectAll(".node")
+              .data(bubble.nodes(classes(frequencyObject))
+              .filter(function(d) { return !d.children; }))
+            .enter().append("g")
+              .attr("class", "node")
+              .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
+              .on("mouseover", function(d) {    
+            div.transition()    
+                .duration(200)    
+                .style("opacity", .9);    
+              div.html(d.className + "<br/>"  + d.value)  
+                .style("left", (d3.event.pageX) + "px")   
+                .style("top", (d3.event.pageY - 28) + "px");  
+            })          
+            .on("mouseout", function(d) {   
+                div.transition()    
+                .duration(500)    
+                .style("opacity", 0); 
+        });;
+
+          node.append("title")
+              .text(function(d) { return d.className + ": " + format(d.value); });
+
+          node.append("circle")
+              .attr("r", function(d) { return d.r; })
+              .style("fill", function(d) { return color(d.packageName); });
+
+          node.append("text")
+              .attr("dy", ".3em")
+              .style("text-anchor", "middle")
+              .text(function(d) { return d.className.substring(0, d.r / 3); });
+
+
+
+      }); 
+
+      function classes(root) {
+      var classes = [];
+
+      function recurse(name, node) {
+        if (node.children) node.children.forEach(function(child) { recurse(node.name, child); });
+        else classes.push({packageName: name, className: node.name, value: node.size});
+      }
+
+      recurse(null, root);
+          return {children: classes};
+      }
+
+      d3.select(self.frameElement).style("height", diameter + "px");
+
+
+    </script>
+  
+  </body>
+</html>
