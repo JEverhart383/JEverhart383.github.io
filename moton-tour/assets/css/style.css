@@ -1,0 +1,37 @@
+.header {
+	text-align: center;
+}
+
+
+.home-panel h3 {
+	text-align: center;
+	color: #fff; 
+	font-size: 2.5em;
+	font-weight: bold;
+	opacity: initial; 
+}
+
+.home-panel {
+	background-color: #000; 
+	opacity: .5; 
+}
+
+.stories-panel {
+	background: url("http://www.neh.gov/files/imagecache/neh_large/humanities/articles/2013_0910_images_13a_moton.jpg") no-repeat right bottom;
+	background-size: cover; 
+}
+
+.map-panel{
+	background: url("http://www.destination360.com/north-america/us/virginia/farmville/hampton-inn-farmville-va-map.gif") no-repeat center;
+	background-size: cover;
+}
+
+.people-panel {
+	background: url("http://www.motonmuseum.org/wp/wp/wp-content/uploads/2010/03/Strikers-1953.jpg") no-repeat center ;
+	background-size: cover; 
+}
+
+.places-panel {
+	background: url("http://www.motonmuseum.org/wp/wp/wp-content/uploads/2010/03/Free-School-opening-day-1963.jpg") no-repeat center;
+	background-size: cover; 
+}
